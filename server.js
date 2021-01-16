@@ -15,6 +15,7 @@ app.use(cors());
 
 // mount our routes
 app.use('/api/users', require('./routes/api/users'));
+app.use('/api/guides', require('./routes/api/guides'));
 
 const port = process.env.PORT || 3001
 // tell express to listen
