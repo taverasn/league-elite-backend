@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const guideSchema = new Schema({
+    userId: String,
     name: String,
     type: {
         type: String,
