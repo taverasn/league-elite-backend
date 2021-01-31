@@ -1,7 +1,6 @@
 {
   "name": "league-elite-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,5 +17,14 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.10",
     "morgan": "^1.10.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taverasn/league-elite-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taverasn/league-elite-backend/issues"
+  },
+  "homepage": "https://github.com/taverasn/league-elite-backend#readme",
+  "description": ""
 }
