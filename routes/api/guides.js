@@ -5,7 +5,7 @@ router.post('/', guidesCtrl.create);
 
 router.use(require('../../config/auth'));
 
-router.get('/', checkAuth, guidesCtrl.getGuides);
+router.get('/', guidesCtrl.getGuides);
 
 router.delete('/:id', checkAuth, guidesCtrl.delete);
 
@@ -14,6 +14,7 @@ router.get('/:id', checkAuth, guidesCtrl.edit);
 router.put('/:id', checkAuth, guidesCtrl.update);
 
 function checkAuth(req, res, next) {
+    console.log(req.user)
     if(req.user) return next();
     return res.status(401).json({msg: 'Not Authorized'});
 }
