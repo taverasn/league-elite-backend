@@ -16,7 +16,7 @@ app.use(cors());
 app.use("/api/users", require("./routes/api/users"));
 app.use("/api/guides", require("./routes/api/guides"));
 app.use(cors({ origin: "https://league-elite.netlify.app" }));
-
+app.options("*", cors({ origin: "https://league-elite.netlify.app" }));
 const port = process.env.PORT || 3001;
 // tell express to listen
 app.listen(port, function () {
